@@ -17,8 +17,9 @@ public class AudienceAdvice {
 		
 	}
 	
+	//System.out.println("\n------Audience Advice---------\n");
 	@Before("pcut()")
-
+	
 	public void takeSeat() {
 		System.out.println("Audience takes seat...");
 	}
