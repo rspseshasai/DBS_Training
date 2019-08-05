@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Support</title>
+</head>
+<body>
+	<h1>Technical Support Request</h1>
+	<hr>
+	
+		<form action="welcome" method="post"  th:object="${temp}">
+			E-Mail    : <input type="text" name="email" th:field="*{email}" ><br/>
+			Problem	Description : 
+			<textarea name="problem" rows="10" cols="30"  th:field="*{problemDesc}"></textarea>
+		  	<br>
+			<input type="submit" value="Submit Request">
+		</form>
+	
+</body>
+</html>
